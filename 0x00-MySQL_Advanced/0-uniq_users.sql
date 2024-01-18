@@ -1,7 +1,7 @@
 -- create user table
--- test idk
-CREATE TABLE IF NOT EXISTS users (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS users(
+    id INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(255) NOT NULL UNIQUE,
     name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
 );
