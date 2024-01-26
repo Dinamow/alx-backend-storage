@@ -9,8 +9,8 @@ if __name__ == '__main__':
     '''Prints the log stats in nginx collection'''
     con = MongoClient('mongodb://localhost:27017')
     collection = con.logs.nginx
-
-    print(f'{collection.estimated_document_count()} logs')
+    x = collection.estimated_document_count()
+    print(f'{x} logs')
 
     methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
     print('Methods:')
